@@ -21,8 +21,34 @@
           <li><a class="dropdown-item" href="http://alaskaair.com">Get a Flight</a></li>
         </ul>
       </div>
+      <div class="loading"></div>
+      <style>
+        .loading{
+          display: flex;
+          justify-content: center;
+        }
+        .loading::after {
+          content: "";
+          width: 100px;
+          height: 100px;
+          border: 10px solid #2f7a2d;
+          border-top-color: red;
+          border-bottom-color: blueviolet;
+          border-right-color: cyan;
+          border-left-color: #e61bb3;
+          border-radius: 50%;
+          animation: loading 1s linear infinite;
+        }
+        @keyframes loading {
+          to {transform: rotate(1turn);}
+        }
+      </style>
+
   </head>
   <body>
+
+    
+
       <div class="container">
     <h1 class="display-1">Thinking about a weekend getaway?</h1>
     <div class="container">
