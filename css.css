@@ -1,0 +1,45 @@
+
+
+img {
+    border-radius: 30%;
+    opacity: 1;
+    
+  }
+
+$desktop: 1200px; 
+$laptop: 999px;
+$tablet: 768px;
+$phone: 480px;
+ 
+body {
+   margin: 0;
+   background-color: #333;
+   @media screen and print (min-width:$phone){
+     background-color: white;
+
+   }
+ }
+
+
+ .container {
+   background-color: #333;
+   padding: 1rem;
+   margin-top: 1rem;
+   @media screen (min-width:$phone){ 
+     display: flex;
+   }
+ }
+
+ .draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+
+ }
+
+ .draggable.dragging {
+
+  opacity: .5;
+ }
+
