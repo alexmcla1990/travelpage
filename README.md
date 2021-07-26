@@ -1,2 +1,2 @@
 # travelpage
-Travel website project for Code Louisville
+Travel website project for Code Louisville to complete course requirements for the Front End development class. I showcase my understanding of javascript with a draggable features element. Currently I only include basic draggable elements which can go between containers. In the future when the website is fully operational users will be able to drag and rearrange all the img elements on the page. Secondly, you'll find a basic loading spinner at the top of the page to represent my understanding of how to spice up a page with cascading style sheets. 
