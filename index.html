@@ -1,51 +1,44 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel=stylesheet href="css.css" TYPE="text/css" MEDIA=screen >
     <script src="java.js" defer></script>
-    
-
-   
     <title>Welcome to this travel page!</title>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Plan your Trip!
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="http://weather.com">Forecasts</a></li>
-          <li><a class="dropdown-item" href="http://amazon.com">Prepare for your Trip</a></li>
-          <li><a class="dropdown-item" href="http://alaskaair.com">Get a Flight</a></li>
-        </ul>
+  <div class="loading"></div>
+      </head>
+  
+  
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="loading"></div>
-      <style>
-        .loading{
-          display: flex;
-          justify-content: center;
-        }
-        .loading::after {
-          content: "";
-          width: 100px;
-          height: 100px;
-          border: 10px solid #2f7a2d;
-          border-top-color: red;
-          border-bottom-color: blueviolet;
-          border-right-color: cyan;
-          border-left-color: #e61bb3;
-          border-radius: 50%;
-          animation: loading 1s linear infinite;
-        }
-        @keyframes loading {
-          to {transform: rotate(1turn);}
-        }
-      </style>
-
-  </head>
-  <body>
+    
+      <header class="fancyheader">
+        <div class="container fancyheader-inner">
+          <h1>Welcome. Yellow is my favourite colour.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rem ullam. Molestias aspernatur aliquid itaque nostrum alias magnam provident maiores quas dolorem cupiditate, minima, culpa voluptates nisi amet rem. Itaque et dolore officiis aliquam explicabo facere nostrum distinctio, non ab!.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </header>
+  
+  
+  
+      <body>
 
     
 
@@ -113,6 +106,7 @@
         <p class="draggable" draggable="true">1</p>
         <p class="draggable" draggable="true">2</p>
       </div>
+      <p class="display-1">Try these draggable elements!</p>
       <div class="container">
         <p class="draggable" draggable="true">3</p>
         <p class="draggable" draggable="true">4</p>
