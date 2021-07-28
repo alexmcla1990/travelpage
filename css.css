@@ -289,14 +289,14 @@ body {
 
   opacity: .5;
  }
-/*media queries*/
+/*start of mobile device media queries*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     
     
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;
@@ -311,7 +311,7 @@ body {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;
@@ -324,7 +324,7 @@ body {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;
@@ -339,7 +339,7 @@ body {
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;
@@ -353,7 +353,7 @@ body {
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;
@@ -366,7 +366,7 @@ body {
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .column {
+    .col {
       flex: 100%;
       max-width: 100%;
       padding: 20px;

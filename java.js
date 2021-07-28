@@ -39,6 +39,38 @@ function getDragAfterElement(container, y){
 }
 
 
+/*Touch screen drag and drop notes 
+touchstart, touchend, touchmove, touchcancel
+document.querySelector('p').addEventListener('touchstart', f);
+function f(ev){
+    console.log(ev.touches, ev.type)
+}
+-------------------------------------
+/*This code is not doing anything yet. Trying to get items to become draggable on mobile device */
+/*select the thing*/
+window.onload = function() {
+var draggableitem = document.getElementsById('draggable');
+/*add your listener*/ 
+draggableitem.addEventListener('touchmove', function(ev){
+ /*find the location*/
+    var touchLocation = ev.targetTouches[0];
+/*give element new coordinates*/ 
+    draggableitem.style.left = touchLocation.pageX = 'px';
+    draggalbeitem.style.top = touchLocation.pageY = 'px';
+
+})
+/*creating a finite space for draggable item */
+draggableitem.addEventListener('touchend', function(ev){
+var x = parseInt(draggableitem.style.left);
+var y = parseInt(draggableitem.style.top);
+if ( x < number || x > number){
+    draggableitem.style.left = 'px';
+    draggableitem.style.top = 'px';
+}
+
+})}
+
+
 
 
 
