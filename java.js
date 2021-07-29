@@ -47,19 +47,23 @@ function f(ev){
 }
 -------------------------------------
 /*This code is not doing anything yet. Trying to get items to become draggable on mobile device */
-/*select the thing*/
+/*select the thing
 window.onload = function() {
-var draggableitem = document.getElementsById('draggable');
-/*add your listener*/ 
+var draggableitem = document.getElementById('box');
+/*add your listene
 draggableitem.addEventListener('touchmove', function(ev){
- /*find the location*/
+ /*find the location
     var touchLocation = ev.targetTouches[0];
-/*give element new coordinates*/ 
+/*give element new coordinates
     draggableitem.style.left = touchLocation.pageX = 'px';
     draggalbeitem.style.top = touchLocation.pageY = 'px';
 
 })
-/*creating a finite space for draggable item */
+}
+
+
+/*
+creating a finite space for draggable item 
 draggableitem.addEventListener('touchend', function(ev){
 var x = parseInt(draggableitem.style.left);
 var y = parseInt(draggableitem.style.top);
@@ -68,11 +72,7 @@ if ( x < number || x > number){
     draggableitem.style.top = 'px';
 }
 
-})}
-
-
-
-
+})
 
 /*const select_items = document.querySelectorAll('.selection');
 const container = document.querySelectorAll('.container')

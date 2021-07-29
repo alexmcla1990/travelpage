@@ -244,11 +244,6 @@ img {
     
   }
 
-$desktop: 1200px; 
-$laptop: 999px;
-$tablet: 768px;
-$phone: 480px;
- 
 body {
 
    margin: 0;
@@ -289,20 +284,23 @@ body {
 
   opacity: .5;
  }
+
+
+
+
+
+
 /*start of mobile device media queries*/
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     
-    
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
-      
-    
+    #content {
+      transform: rotate(1turn)
+
     }
+    
 }
 
 /* Portrait */
@@ -311,10 +309,9 @@ body {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
+  
+    #content {
+      transform: rotate(1turn)
     }
 }
 
@@ -324,26 +321,24 @@ body {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
+  
+    #content {
+      transform: rotate(1turn)
     }
 }
 
 
 
-}
+
 /*start of Ipad media queries*/
 @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
+    #content {
+      transform: rotate(1turn)
     }
+    
 }
 
 /* Portrait */
@@ -353,11 +348,10 @@ body {
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
+    #content {
+      transform: rotate(1turn)
     }
+    
 }
 
 /* Landscape */
@@ -366,9 +360,7 @@ body {
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    .col {
-      flex: 100%;
-      max-width: 100%;
-      padding: 20px;
+    #content {
+      transform: rotate(1turn)
     }
 }
