@@ -304,8 +304,7 @@ and (max-device-width: 812px)
   .loading{
     background-color: violet;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    position: relative;
     display: flex;
     z-index: 1;
           }
@@ -348,9 +347,8 @@ and (orientation: portrait) {
   }
   .loading{
     background-color: violet;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
+    justify-content: center
+    position: relative;
     display: flex;
     z-index: 1;
           }
@@ -396,8 +394,7 @@ footer{
   .loading{
     background-color: violet;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    position: relative;
     display: flex;
     z-index: 1;
           }
