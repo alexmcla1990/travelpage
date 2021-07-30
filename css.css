@@ -432,6 +432,29 @@ and (min-device-width: 1024px)
 and (max-device-width: 1366px)
  {
 
+ .another{
+  background-color: violet;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  z-index: 1;
+        }
+.another::after {
+ content: "";
+ width: 300px;
+ height: 300px;
+ border: 50px solid #2f7a2d;
+ border-top-color: red;
+ border-bottom-color: blueviolet;
+ border-right-color: cyan;
+ border-left-color: #e61bb3;
+ border-radius: 75%;
+ 
+ animation: loading 1s linear infinite;
+        }
+ @keyframes loading {
+    to {transform: rotate(1turn);}
+        }
 }
 
 /* Portrait */
